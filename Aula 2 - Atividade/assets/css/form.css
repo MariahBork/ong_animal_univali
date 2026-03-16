@@ -1,0 +1,39 @@
+input, textarea, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form{
+    border-radius: 10px;
+    background-color: #ddd;
+    padding: 20px;
+    width: 70%;
+    margin: 30px auto;
+}
+
+input[type=subimit]{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type=subimit]:hover{
+    background-color: #4CAF50;
+}
+
+label{
+    margin: 8px 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+}

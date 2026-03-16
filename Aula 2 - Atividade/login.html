@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <script>
+        function getLogin(){
+            let login = document.getElementById(login).value;
+            let password = document.getElementById(password).value;
+
+            if (login === "admin" && password === "123"){
+                let url="./servicos.html";
+                window.open(url);
+            }else{
+                alert("Login ou senha incorretos. Tente novamente")
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2> Área de Login do Usuário</h2>
+    <form>
+        <div>
+            <img src="./imagens/logo.png" id="logo">
+        </div>
+        <div class="imgcontainer">
+            <label> Login: </label>
+            <input type="text" id="login" required><br><br>
+            <label> Senha: </label>
+            <input type="password" id="password" required><br><br>
+            <input type="submit" value="Entrar" onclick="getLogin()">
+        </div>
+    </form>
+    
+</body>
+</html>

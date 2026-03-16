@@ -1,0 +1,19 @@
+input[type=submit]
+
+input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+.imgcontainer{
+    text-align: center;
+    margin: 24px 0;
+}
+
+.container{
+    padding: 16px;
+}
+
+#logo{
+    width: 30%;
+    border-radius: 50%;
+}
