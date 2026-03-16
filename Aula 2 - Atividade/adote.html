@@ -6,9 +6,9 @@
     <title>Adoção de Pets</title>
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            margin: 0px;
+            margin: 0;
         }
 
         header {
@@ -18,17 +18,36 @@
             padding: 20px;
         }
 
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
         .pet-card {
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
             margin: 15px;
             padding: 15px;
             width: 27.5%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .pet-card:hover {
+            transform: scale(1.03);
         }
 
         .pet-card img {
@@ -39,92 +58,85 @@
         .pet-card .nome {
             font-weight: bold;
             margin-top: 0.5em;
+            font-size: 1.1em;
         }
-        .gallery{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 5px;
-            margin: 5px;
-            flex-wrap: wrap;
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ddd;
+            font-family: Comic Sans MS;
         }
     </style>
 </head>
-
-<body bgcolor="E5E4E2" text="black" link="white" vlink="white" alink="red">
+<body>
     <header>
         <h1>Adoção de Pets</h1>
         <p>Encontre o seu novo amigo!</p>
-        <nav align="center"> 
-            <font face="Arial" size="4">
-                <a href="./index.html"style="text-decoration:none"> Home </a> &nbsp;|&nbsp;
-                <a href="./sobre.html"style="text-decoration:none">Sobre </a> &nbsp;|&nbsp;
-                <a href="./servicos.html"style="text-decoration:none"> Serviços </a> &nbsp;|&nbsp;
-                <a href="./adote.html" target="_blank" style="text-decoration:none"> Adote um animal </a> &nbsp;|&nbsp;
-                <a href="./contato.html" target="_blank" style="text-decoration:none">Contato </a> 
-            </font>
+        <nav>
+            <a href="./index.html">Home</a> |
+            <a href="./sobre.html">Sobre</a> |
+            <a href="./servicos.html">Serviços</a> |
+            <a href="./adote.html">Adote um animal</a> |
+            <a href="./contato.html">Contato</a>
         </nav>
     </header>
     <main>
         <div class="gallery">
             <div class="pet-card">
-                <img src="./imagens/alice.jpg" alt="">
+                <img src="./imagens/alice.jpg" alt="Alice">
                 <p class="nome">Alice</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/felix.jpg" alt="">
+                <img src="./imagens/felix.jpg" alt="Felix">
                 <p class="nome">Felix</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/frederico.jpg" alt="">
+                <img src="./imagens/frederico.jpg" alt="Frederico">
                 <p class="nome">Frederico</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/jacob.jpg" alt="">
+                <img src="./imagens/jacob.jpg" alt="Jacob">
                 <p class="nome">Jacob</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/jorge.jpg" alt="">
+                <img src="./imagens/jorge.jpg" alt="Jorge">
                 <p class="nome">Jorge</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/lauro.jpg" alt="">
+                <img src="./imagens/lauro.jpg" alt="Lauro">
                 <p class="nome">Lauro</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/lessie.jpg" alt="">
+                <img src="./imagens/lessie.jpg" alt="Lessie">
                 <p class="nome">Lessie</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/peter.jpg" alt="">
+                <img src="./imagens/peter.jpg" alt="Peter">
                 <p class="nome">Peter</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/phillip.jpg" alt="">
+                <img src="./imagens/phillip.jpg" alt="Phillip">
                 <p class="nome">Phillip</p>
                 <p>Cão Amigo</p>
             </div>
             <div class="pet-card">
-                <img src="./imagens/spark.jpg" alt="">
+                <img src="./imagens/spark.jpg" alt="Spark">
                 <p class="nome">Spark</p>
                 <p>Cão Amigo</p>
             </div>
         </div>
-
     </main>
-    <footer> 
-        <font color="black" size="3" face="Comic Sans MS">
-        <p align="center"> Todos os direitos reservados &copy; 2026 </p>
-        </font>
+    <footer>
+        <p>Todos os direitos reservados &copy; 2026</p>
     </footer>
 </body>
-
 </html>
