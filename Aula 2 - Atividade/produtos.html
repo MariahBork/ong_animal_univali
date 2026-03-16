@@ -5,116 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossos Produtos</title>
     <style>
-        body {
-            font-family: Arial;
-            background-color: #f4f4f4;
-            margin: 0px;
-        }
-
-        header {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-
+        body { font-family: Arial; background-color: #f4f4f4; margin: 0; }
+        header { text-align: center; background-color: #333; color: #fff; padding: 20px; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; }
         .pet-card {
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             margin: 15px;
-            padding: 15px;
-            width: 27.5%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
         }
-
-        .pet-card img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .pet-card .nome {
-            font-weight: bold;
-            margin-top: 0.5em;
-        }
-        .gallery{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 5px;
-            margin: 5px;
-            flex-wrap: wrap;
-        }
+        .pet-card:hover { transform: scale(1.05); }
+        .pet-card img { width: 100%; border-radius: 5px; }
+        .pet-card .nome { font-weight: bold; margin-top: 10px; }
+        .preco { color: green; font-weight: bold; margin-top: 5px; }
+        footer { text-align: center; padding: 10px; background-color: #ddd; font-family: Comic Sans MS; }
     </style>
 </head>
-
-<body bgcolor="E5E4E2" text="black" link="white" vlink="white" alink="red">
+<body>
     <header>
         <h1>Nossos Produtos</h1>
         <p>Encontre tudo para o seu novo amigo!</p>
-        <nav align="center"> 
-            <font face="Arial" size="4">
-                <a href="./index.html"style="text-decoration:none"> Home </a> &nbsp;|&nbsp;
-                <a href="./sobre.html"style="text-decoration:none">Sobre </a> &nbsp;|&nbsp;
-                <a href="./servicos.html"style="text-decoration:none"> Serviços </a> &nbsp;|&nbsp;
-                <a href="./adote.html" target="_blank" style="text-decoration:none"> Adote um animal </a> &nbsp;|&nbsp;
-                <a href="./contato.html" target="_blank" style="text-decoration:none">Contato </a> 
-            </font>
+        <nav>
+            <a href="./index.html">Home</a> |
+            <a href="./sobre.html">Sobre</a> |
+            <a href="./servicos.html">Serviços</a> |
+            <a href="./adote.html">Adote um animal</a> |
+            <a href="./contato.html">Contato</a>
         </nav>
     </header>
     <main>
         <div class="gallery">
             <div class="pet-card">
-                <img src="./produtos/antipulgas.jpg" alt="">
+                <img src="./produtos/antipulgas.jpg" alt="Antipulgas">
                 <p class="nome">Antipulgas</p>
+                <p class="preco">R$ 50,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/brinquedo.jpg" alt="">
+                <img src="./produtos/brinquedo.jpg" alt="Brinquedo">
                 <p class="nome">Brinquedo</p>
+                <p class="preco">R$ 35,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/cama.jpg" alt="">
+                <img src="./produtos/cama.jpg" alt="Cama">
                 <p class="nome">Cama</p>
+                <p class="preco">R$ 150,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/casa.jpg" alt="">
+                <img src="./produtos/casa.jpg" alt="Casa">
                 <p class="nome">Casa</p>
+                <p class="preco">R$ 300,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/comedouro.jpg" alt="">
-                <p class="nome">Comeouro</p>
+                <img src="./produtos/comedouro.jpg" alt="Comedouro">
+                <p class="nome">Comedouro</p>
+                <p class="preco">R$ 30,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/guia.jpg" alt="">
+                <img src="./produtos/guia.jpg" alt="Guia">
                 <p class="nome">Guia</p>
+                <p class="preco">R$ 40,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/petisco.jpg" alt="">
+                <img src="./produtos/petisco.jpg" alt="Petisco">
                 <p class="nome">Petisco</p>
+                <p class="preco">R$ 20,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/racao.jpg" alt="">
+                <img src="./produtos/racao.jpg" alt="Ração">
                 <p class="nome">Ração</p>
+                <p class="preco">R$ 120,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/tapete_higienico.jpg" alt="">
+                <img src="./produtos/tapete_higienico.jpg" alt="Tapete Higiênico">
                 <p class="nome">Tapete Higiênico</p>
+                <p class="preco">R$ 60,00</p>
             </div>
             <div class="pet-card">
-                <img src="./produtos/toalha_umidecida.jpg" alt="">
-                <p class="nome">Toalha Umidecida</p>
+                <img src="./produtos/toalha_umidecida.jpg" alt="Toalha Umedecida">
+                <p class="nome">Toalha Umedecida</p>
+                <p class="preco">R$ 25,00</p>
             </div>
         </div>
-
     </main>
-    <footer> 
-        <font color="black" size="3" face="Comic Sans MS">
-        <p align="center"> Todos os direitos reservados &copy; 2026 </p>
-        </font>
+    <footer>
+        <p>Todos os direitos reservados &copy; 2026</p>
     </footer>
 </body>
-
 </html>
