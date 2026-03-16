@@ -6,9 +6,9 @@
     <title>Nossos Serviços</title>
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            margin: 0px;
+            margin: 0;
         }
 
         header {
@@ -18,79 +18,82 @@
             padding: 20px;
         }
 
-        .pet-card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-            margin: 15px;
-            padding: 15px;
-            width: 70%;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .gallery {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-left: 14%;
+            padding: 20px;
         }
 
-        .pet-card img {
-            width: 100%;
-            border-radius: 5px;
+        .pet-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 15px;
+            padding: 20px;
+            width: 70%;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .pet-card:hover {
+            transform: scale(1.02);
         }
 
         .pet-card .nome {
             font-weight: bold;
-            margin-top: 0.5em;
+            font-size: 1.2em;
+            margin-bottom: 10px;
         }
-        .gallery{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 5px;
-            margin: 5px;
-            flex-wrap: wrap;
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ddd;
+            font-family: Comic Sans MS;
         }
     </style>
 </head>
-
-<body bgcolor="E5E4E2" text="black" link="white" vlink="white" alink="red">
+<body>
     <header>
         <h1>Nossos Serviços</h1>
-        <nav align="center"> 
-            <font face="Arial" size="4">
-                <a href="./index.html"style="text-decoration:none"> Home </a> &nbsp;|&nbsp;
-                <a href="./sobre.html"style="text-decoration:none">Sobre </a> &nbsp;|&nbsp;
-                <a href="./servicos.html"style="text-decoration:none"> Serviços </a> &nbsp;|&nbsp;
-                <a href="./adote.html" target="_blank" style="text-decoration:none"> Adote um animal </a> &nbsp;|&nbsp;
-                <a href="./contato.html" target="_blank" style="text-decoration:none">Contato </a> 
-            </font>
+        <nav>
+            <a href="./index.html">Home</a> |
+            <a href="./sobre.html">Sobre</a> |
+            <a href="./servicos.html">Serviços</a> |
+            <a href="./adote.html">Adote um animal</a> |
+            <a href="./contato.html">Contato</a>
         </nav>
     </header>
     <main>
         <div class="gallery">
             <div class="pet-card">
-                <p class="nome">Serviço 1</p>
-                <p>Resgate de animais de rua</p>
+                <p class="nome">Resgate</p>
+                <p>Resgatamos animais em situação de rua.</p>
             </div>
             <div class="pet-card">
-                <p class="nome">Serviço 2</p>
-                <p>Cuidados de saúde para os animais resgatados</p>
+                <p class="nome">Saúde</p>
+                <p>Oferecemos cuidados veterinários para os animais resgatados.</p>
             </div>
             <div class="pet-card">
-                <p class="nome">Serviço 3</p>
-                <p>Adoção de animais resgatados</p>
+                <p class="nome">Adoção</p>
+                <p>Promovemos adoções responsáveis e acompanhadas.</p>
             </div>
             <div class="pet-card">
-                <p class="nome">Serviço 4</p>
-                <p>Campanhas de castração</p>
+                <p class="nome">Castração</p>
+                <p>Realizamos campanhas de castração para controle populacional.</p>
             </div>
         </div>
-
     </main>
-    <footer> 
-        <font color="black" size="3" face="Comic Sans MS">
-        <p align="center"> Todos os direitos reservados &copy; 2026 </p>
-        </font>
+    <footer>
+        <p>Todos os direitos reservados &copy; 2026</p>
     </footer>
 </body>
-
 </html>
